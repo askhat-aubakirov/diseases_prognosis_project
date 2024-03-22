@@ -44,7 +44,7 @@ features = ["itching","skin_rash","nodal_skin_eruptions","continuous_sneezing",
 symptoms = {
     "itching": st.checkbox("Зуд"),
     "skin_rash": st.checkbox("Кожная сыпь"),
-    "nodal_skin_eruptions": st.checkbox("тестовая опция")
+    "nodal_skin_eruptions": st.checkbox("тестовая опция"),
     "loss_of_balance": st.checkbox("Потеря равновесия"),
 }
 
