@@ -40,7 +40,7 @@ features = ["itching","skin_rash","nodal_skin_eruptions","continuous_sneezing",
             "receiving_blood_transfusion","receiving_unsterile_injections","coma","stomach_bleeding",
             "distention_of_abdomen","history_of_alcohol_consumption","fluid_overload","blood_in_sputum",
             "prominent_veins_on_calf","palpitations","painful_walking","pus_filled_pimples","blackheads",
-            "scurring","skin_peeling","silver_like_dusting","small_dents_in_nails","inflammatory_nails,blister",
+            "scurring","skin_peeling","silver_like_dusting","small_dents_in_nails","inflammatory_nails", "blister",
             "red_sore_around_nose","yellow_crust_ooze"]
 '''
 
@@ -174,7 +174,8 @@ symptoms = {
     "skin_peeling": st.checkbox("Шелушение кожи", key="skin_peeling"),  # Skin peeling
     "silver_like_dusting": st.checkbox("Серебряный налет", key="silver_like_dusting"),  # Silver-like
     "small_dents_in_nails": st.checkbox("Вмятины на ногтях", key="small_dents_in_nails"),  # Small dents in nails
-    "inflammatory_nails,blister": st.checkbox("Воспаление ногтей, волдыри", key="inflammatory_nails_blister"),  # Inflammatory nails, blister (combined)
+    "inflammatory_nails", st.checkbox("Воспаление ногтей", key="inflammatory_nails"),  # Inflammatory nails
+    "blister": st.checkbox("волдыри", key="blister"),  #blister
     "red_sore_around_nose": st.checkbox("Красная язва вокруг носа", key="red_sore_around_nose"),  # Red sore around nose
     "yellow_crust_ooze": st.checkbox("Желтый экссудат", key="yellow_crust_ooze"),  # Yellow crust ooze
 }
