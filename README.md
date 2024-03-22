@@ -6,9 +6,10 @@ ipynb file has EDA and model training and test
 Tools to be used:
 - Streamlit
 - seaborn, pandas, scikit-learn
+- RandomForestClassifier
 
 How it should work when finished:
-- user goes to {app_name}.streamlit.app
-- chooses the symptoms they have (checking the box? typing it and looking for symptoms?)
+- user goes to https://diseases-random-forest.streamlit.app
+- chooses the symptoms they have (checking the boxes)
 - submits info
-- gets prognosis + accuracy rate
+- gets prognosis (diagnosis)
