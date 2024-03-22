@@ -9,7 +9,7 @@ with st.spinner("Загрузка..."):
 
 st.success("Загрузка модели успешна!")
 
-st.write("Выберите из списка наблюдаемые симптомы")
+st.write("Выберите из списка наблюдаемые симптомы:")
 
 # Get user inputs
 # using checkboxes
