@@ -44,7 +44,7 @@ features = ["itching","skin_rash","nodal_skin_eruptions","continuous_sneezing",
 symptoms = {
     "itching": st.checkbox("Зуд"),
     "skin_rash": st.checkbox("Кожная сыпь"),
-    "nodal_skin_eruptions": st.checkbox("тестовая опция"),
+    "nodal_skin_eruptions": st.checkbox("Узловые кожные высыпания"),
     "loss_of_balance": st.checkbox("Потеря равновесия"),
 }
 
@@ -59,5 +59,6 @@ if st.button("Прогноз"):
     # Assuming model expects numerical features, convert selected symptoms to a list of 1s and 0s
     # based on presence/absence in the selected_symptoms list
     features = [1 if symptom in selected_symptoms else 0 for symptom in symptoms.keys()]
+    st.write(f"{features}, \n{selected_symptoms}\n\n")
     prediction = loaded_model.predict([features])
     st.write("Прогноз:", prediction[0])
