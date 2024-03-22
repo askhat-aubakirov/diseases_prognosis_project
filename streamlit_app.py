@@ -40,11 +40,24 @@ features = ["itching","skin_rash","nodal_skin_eruptions","continuous_sneezing",
             "scurring","skin_peeling","silver_like_dusting","small_dents_in_nails","inflammatory_nails,blister",
             "red_sore_around_nose","yellow_crust_ooze","prognosis"]
 
-for feature in features:
-    feature_value = st.number_input(f"Введите значение для {feature}", value=0.0)
-    features.append(feature_value)
+#using checkboxes
+symptoms = {
+    "itching": st.checkbox("Зуд"),
+    "skin_rash": st.checkbox("Кожная сыпь"),
+    "nodal_skin_eruptions": st.checkbox("тестовая опция")
+    "loss_of_balance": st.checkbox("Потеря равновесия"),
+}
 
-# Make prediction when user clicks a button
+#сохранение выбранных симптомов
+selected_symptoms = []
+for symptom, checkbox in symptoms.items():
+    if checkbox:
+        selected_symptoms.append(symptom)
+
+#прогнозируем при нажатии кнопки
 if st.button("Прогноз"):
-    prediction = loaded_model.predict([features])  # Assuming single prediction
-    st.write("Прогноз:", prediction)
+    # Assuming model expects numerical features, convert selected symptoms to a list of 1s and 0s
+    # based on presence/absence in the selected_symptoms list
+    features = [1 if symptom in selected_symptoms else 0 for symptom in symptoms.keys()]
+    prediction = loaded_model.predict([features])
+    st.write("Прогноз:", prediction[0])
