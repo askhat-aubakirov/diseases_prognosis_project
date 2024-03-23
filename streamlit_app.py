@@ -160,4 +160,4 @@ if st.button("Прогноз"):
     features = [1 if symptom in selected_symptoms else 0 for symptom in symptoms.keys()]
     st.write(f"Входные данные для модели в виде списка (без названий столбцов):\n\n{features}, \n\nДлина входного набора данных:\n\n{len(features)} \n\nВыбранные симптомы (из оригинальные названия из датасета): {selected_symptoms}\n\n")
     prediction = loaded_model.predict([features])
-    st.write("Прогноз:", prediction[0])
+    st.write("Прогноз:", prediction[0-2])
