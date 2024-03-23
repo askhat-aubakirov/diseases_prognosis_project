@@ -158,6 +158,6 @@ if st.button("Прогноз"):
     # Assuming model expects numerical features, convert selected symptoms to a list of 1s and 0s
     # based on presence/absence in the selected_symptoms list
     features = [1 if symptom in selected_symptoms else 0 for symptom in symptoms.keys()]
-    st.write(f"Входные данные для модели в виде списка (без названий столбцов):\n{features}, Длина входного набора данных:\n{len(features)} \nВыбранные симптомы (из оригинальные названия из датасета): {selected_symptoms}\n\n")
+    st.write(f"Входные данные для модели в виде списка (без названий столбцов):\n\n{features}, \n\nДлина входного набора данных:\n\n{len(features)} \n\nВыбранные симптомы (из оригинальные названия из датасета): {selected_symptoms}\n\n")
     prediction = loaded_model.predict([features])
     st.write("Прогноз:", prediction[0])
