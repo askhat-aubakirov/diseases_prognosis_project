@@ -59,7 +59,6 @@ symptoms = {
     "yellow_urine": st.checkbox("Желтая моча", key="yellow_urine"),  # Yellow urine (already included)
     "yellowing_of_eyes": st.checkbox("Пожелтение глаз", key="yellowing_of_eyes"),  # Yellowing of eyes
     "acute_liver_failure": st.checkbox("Острая печеночная недостаточность", key="acute_liver_failure"),  # Acute liver failure
-    "fluid_overload": st.checkbox("Перегрузка жидкостью", key="fluid_overload"),  # Fluid overload
     "swelling_of_stomach": st.checkbox("Отечный живот", key="swelling_of_stomach"),  # Swelling of stomach
     "swelled_lymph_nodes": st.checkbox("Увеличенные лимфатические узлы", key="swelled_lymph_nodes"),  # Swollen lymph nodes
     "malaise": st.checkbox("Недомогание", key="malaise"),  # Malaise
