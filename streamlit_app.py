@@ -6,7 +6,15 @@ st.header('Прогноз Среди :blue[42] Заболеваний с Кла�
 
 st.write("Это приложение использует натренированную модель с использованием RandomForestClassifier и датасета Disease Prediction Using Machine Learning \nhttps://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning/data")
 st.write("Репозиторий: https://github.com/askhat-aubakirov/diseases_prognosis_project")
-st.write("Разработано: \nАсхат Аубакиров (https://www.linkedin.com/in/askhattio/), \nАдиль Тлемс")
+
+st.markdown(
+"""
+Разработано:
+- Асхат Аубакиров (https://www.linkedin.com/in/askhattio/),
+- Адиль Тлемс
+"""
+)
+# st.write("Разработано: Асхат Аубакиров (https://www.linkedin.com/in/askhattio/), Адиль Тлемс")
 st.header("Демонстрация работы модели:", divider='rainbow')
 st.write("Загрузка натренированной RandomForest (Случайный Лес)...")
 with st.spinner("Загрузка..."):
