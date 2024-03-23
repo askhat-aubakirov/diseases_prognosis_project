@@ -2,7 +2,7 @@ import streamlit as st
 import joblib #для загрузки готовой модели
 
 st.header('Diseases Random Forest Prognosis', divider='rainbow')
-st.header('Прогноз Среди :blue[42] Заболеваний с Классификатором Случайного Леса)')
+st.header('Прогноз Среди :blue[42] Заболеваний с Классификатором Случайного Леса')
 
 st.write("Это приложение использует натренированную модель с использованием RandomForestClassifier и датасета Disease Prediction Using Machine Learning \nhttps://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning/data")
 st.write("Репозиторий: https://github.com/askhat-aubakirov/diseases_prognosis_project")
