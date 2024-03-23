@@ -5,13 +5,16 @@ st.header('Diseases Random Forest Prognosis', divider='rainbow')
 st.header('Прогноз Среди :blue[42] Заболеваний с Классификатором Случайного Леса)')
 
 st.write("Это приложение использует натренированную модель с использованием RandomForestClassifier и датасета Disease Prediction Using Machine Learning \nhttps://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning/data")
+st.write("Репозиторий: https://github.com/askhat-aubakirov/diseases_prognosis_project")
+st.write("Разработано: Асхат Аубакиров (linkedin.com/in/askhattio), Адиль Тлемс")
+st.header("Демонстрация работы модели:", divider='rainbow')
 st.write("Загрузка натренированной RandomForest (Случайный Лес)...")
 with st.spinner("Загрузка..."):
     loaded_model = joblib.load('model_random_f.joblib')
 
 st.success("Загрузка модели успешна!")
 
-st.write("Выберите из списка наблюдаемые симптомы:")
+st.write("Выберите из списка наблюдаемые симптомы, а затем нажмите кнопку 'Прогноз' для получения результата:")
 
 # Get user inputs
 #using checkboxes
@@ -163,3 +166,4 @@ if st.button("Прогноз"):
     st.write(f"Входные данные для модели в виде списка (без названий столбцов):\n\n{features}, \n\nДлина входного набора данных:\n\n{len(features)} \n\nВыбранные симптомы (из оригинальные названия из датасета): {selected_symptoms}\n\n")
     prediction = loaded_model.predict([features])
     st.write("Прогноз:", prediction)
+    st.header("Помните, что эта программа сделана в целях демонстрации использования технологий в медицине и не является заменой профессиональной медицинской консультации")
