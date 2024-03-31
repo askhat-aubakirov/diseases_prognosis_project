@@ -11,7 +11,7 @@ st.markdown(
 """
 Разработано:
 - Асхат Аубакиров (https://www.linkedin.com/in/askhattio/),
-- Адиль Тлемс
+- Адиль Тлемс (https://www.linkedin.com/in/darkside-undefined-54208a301/)
 """
 )
 # st.write("Разработано: Асхат Аубакиров (https://www.linkedin.com/in/askhattio/), Адиль Тлемс")
